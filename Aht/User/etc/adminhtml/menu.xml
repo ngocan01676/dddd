@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+	  <add id="Aht_User::user" title="user" translate="title" module="Aht_User" sortOrder="90" dependsOnModule="Aht_User" resource="Aht_User::user"/>
+	  <add id="Aht_User::news" title="News" translate="title" module="Aht_User" parent="Aht_User::user" sortOrder="50" dependsOnModule="Aht_User" resource="Aht_User::news"/>
+	  <add id="Aht_User::news_allnews" title="List user" translate="title" module="Aht_User" parent="Aht_User::news" sortOrder="10" dependsOnModule="Aht_User" action="user/user/index" resource="Aht_User::news_allnews"/>
+
+	</menu>
+</config>
+ 
